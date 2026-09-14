@@ -3,10 +3,7 @@
 # Project Overview
 
 This project analyses cancer waiting-time performance across the NHS Scotland health boards,and identify trends,variation,and areas of underperformance.
-
-# Objective
- 
-The objective is to identify trends in cancer waiting times,assess performance against national standards,compare health boards, analyse variation across cancer types and provide evidence-based insights that could support healthcare service improvement.
+The aim is to identify trends in cancer waiting times,assess performance against national standards,compare health boards, analyse variation across cancer types and provide evidence-based insights that could support healthcare service improvement.
 
 The project demonstrates an end-to-end health informatics analytics workflow,viz:
 
@@ -26,3 +23,27 @@ Cancer patients often experience delays between referral, diagnosis and the star
 The key analytical question for this project is:
 
 "How does cancer waiting-time performance vary across NHS Scotland, health boards and cancer pathways, and where are the greatest areas of underperformance"?
+
+# Project Objectives
+
+The project aims to provide insight into these business questions:
+
+1. What is the overall NHS Scotland cancer waiting-time performance?
+
+2. How does 31-day performance compare with 62-day performance?
+
+3. Which health boards meet the 95% standard?
+
+4. Which health boards show persistent underperformance?
+
+5. Which cancer types have the longest waits?
+
+6. How do median and maximum waits differ?
+
+7. How does eligible referral volume change over time?
+
+8. Does performance change materially across quarters?
+
+9. Where should operational teams investigate further?
+
+10. How can the dashboard support continuous performance monitoring?
