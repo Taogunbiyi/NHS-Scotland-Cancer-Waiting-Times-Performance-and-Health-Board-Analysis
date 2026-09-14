@@ -150,4 +150,93 @@ Data-quality dimension	& Data Assessment;
 • Uniqueness	 - Duplicate records identified
 • Accuracy - 	Values checked against source documentation
 • Timeliness 	- Reporting period recorded
-• Integrity -	Relationships between fields assessed.           
+• Integrity -	Relationships between fields assessed.    
+
+# Key Performance Indicators
+
+The dashboard focuses on healthcare-relevant KPIs.
+
+### 31-Day Performance
+
+Measures the percentage of relevant patients whose treatment started within the 31-day standard.
+
+### 62-Day Performance
+
+Measures the percentage of relevant patients whose treatment started within the 62-day standard.
+
+### Median Waiting Time
+
+The median represents the middle waiting-time value and reduces the influence of extreme observations.
+
+### Maximum Waiting Time
+
+Shows the longest recorded waiting time within the relevant reporting group.
+
+### Target Achievement
+
+Measures whether performance meets the applicable national standard.    
+
+# Power BI Dashboard
+
+The Power BI dashboard is structured into several analytical pages.
+
+## Page 1 — Executive Overview
+
+The executive page provides a high-level summary of NHS Scotland performance. The purpose is to allow a healthcare professional or analyst to have a quick understanding of the overall performance. 
+
+The Key visuals include;
+• Total Eligible referrals
+• Total Eligible referral met
+• 31-day performance (%)
+• 62-day performance (%)
+• Median waiting time (days)
+• Maximum waiting time (days)
+• Performance trend
+• Target achievements 
+
+## Page 2 — Waiting-Time Trends
+
+This page analyses performance over time,and addressed questions such as; 
+
+• Is performance improving?
+• Is performance deteriorating?
+• Are there periods of significant change?
+• How has median waiting time changed?
+• How has target achievement changed?
+
+These were visualised using Line charts,
+KPI cards, Trend indicators, and Year/quarter slicers.
+
+## Page 3 — Health Board Performance
+
+This page compares NHS health boards, and 
+addressed questions such as; 
+
+• Which boards perform above the national level?
+• Which boards perform below the national level?
+• Which boards have persistent underperformance?
+• Which boards show improvement?
+
+Visualisations used include Health board ranking, Performance comparison, Conditional formatting, Trend by health board, and Target achievement, allowing users to select and investigate individual health board performance over time.
+
+## Page 4 — Cancer Type Analysis
+
+This page compares waiting-time performance by cancer type/pathway.
+
+Questions addressed include;
+• Which cancer types have the longest waits?
+• Which cancer types perform best against the standards?
+• Which pathways show the greatest variation?
+• Are some cancer types consistently below target?
+
+## Page 5 — Waiting-Time Distribution
+
+This page examines the distribution of waiting times. Measures examined include:
+
+• Minimum wait
+• Maximum wait
+• Median wait
+• Average wait
+• Distribution of waiting times
+
+
