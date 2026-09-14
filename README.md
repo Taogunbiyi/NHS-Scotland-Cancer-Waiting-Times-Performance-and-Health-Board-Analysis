@@ -143,13 +143,11 @@ Data-quality checks were performed before calculating KPIs to reduce the risk of
 
 The project evaluates:
 
-Data-quality dimension	       Assessment
-Completeness	         Percentage of missing values
-Validity	             Values fall within expected ranges
-Consistency	Categories and names are standardised
-Uniqueness	Duplicate records identified
-Accuracy	Values checked against source documentation
-Timeliness	Reporting period recorded
-Integrity	Relationships between fields assessed
-
-A separate data-quality dashboard can be included in a future version of the project            
+Data-quality dimension	& Data Assessment;
+• Completeness	 - Percentage of missing values
+• Validity	 - Values fall within expected ranges
+• Consistency	- Categories and names are standardised
+• Uniqueness	 - Duplicate records identified
+• Accuracy - 	Values checked against source documentation
+• Timeliness 	- Reporting period recorded
+• Integrity -	Relationships between fields assessed.           
