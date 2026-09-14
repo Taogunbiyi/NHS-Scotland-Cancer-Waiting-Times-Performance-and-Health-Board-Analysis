@@ -92,7 +92,7 @@ Healthcare analytics must consider confidentiality, information governance and a
 
 Where patient-level data is used in future versions, appropriate governance, access controls, lawful processing and disclosure controls would be required.
 
-Analytical Workflow
+# Analytical Workflow
 
            PUBLIC HEALTH SCOTLAND DATA
                     │
@@ -120,7 +120,6 @@ Analytical Workflow
                     ▼ 
                RECOMMENDATIONS
               
-               
 # Data Preparation
 
 Before analysis, the dataset was assessed for data-quality issues.
