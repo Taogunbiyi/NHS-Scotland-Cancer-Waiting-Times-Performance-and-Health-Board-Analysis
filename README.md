@@ -7,7 +7,7 @@ The aim is to identify trends in cancer waiting times,assess performance against
 
 The project demonstrates an end-to-end health informatics analytics workflow,viz:
 
-Data acquisition → Data quality → Data preparation → SQL analysis → Python analysis → Power BI modelling → Dashboard → Insights → Recommendations
+Data acquisition → Data quality → Data preparation → SQL analysis → Power BI modelling → Dashboard → Insights → Recommendations
 
 The analysis focuses on the two principal cancer waiting-time standards:
 
