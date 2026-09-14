@@ -47,3 +47,110 @@ The project aims to provide insight into these business questions:
 9. Where should operational teams investigate further?
 
 10. How can the dashboard support continuous performance monitoring?
+
+# Dataset
+
+The analysis uses publicly available NHS Scotland cancer waiting-time statistics published by Public Health Scotland.
+
+The dataset contains information relating to cancer waiting-time performance, including measures such as:
+
+• Reporting period
+• NHS Board
+• Cancer type/pathway
+• Number of patients
+• Waiting-time measures
+• Percentage meeting the relevant standard
+  31-day performance
+  62-day performance
+
+The precise fields depend on the version of the Public Health Scotland dataset used for the analysis.
+
+# Data source
+
+Public Health Scotland:
+
+https://www.publichealthscotland.scot/
+
+The latest release used for this project should be documented in the data/README.md file so that the analysis remains reproducible.
+
+# Data Governance and Privacy
+
+This project uses publicly available aggregate statistics.
+
+No identifiable patient-level information is used.
+
+The project therefore does not require the storage or publication of:
+
+• Patient names
+• NHS numbers
+• Addresses
+• Dates of birth
+• Individual clinical records
+• Other directly identifiable patient information
+
+Healthcare analytics must consider confidentiality, information governance and appropriate use of health data.
+
+Where patient-level data is used in future versions, appropriate governance, access controls, lawful processing and disclosure controls would be required.
+
+Analytical Workflow
+
+           PUBLIC HEALTH SCOTLAND DATA
+                    │
+                    ▼
+              DATA QUALITY CHECKS
+                    │
+                    ▼
+               DATA PREPARATION
+                    │
+                    ▼ 
+              DATA MODELLING 
+                    │ 
+                    ▼ 
+                 POWER BI 
+                    │ 
+
+      ┌───────────┼───────────┐ 
+      ▼            ▼             ▼ 
+     KPIs         Trends.     Comparisons
+
+      └───────────┼───────────┘ 
+                    ▼ 
+               KEY INSIGHTS 
+                    │ 
+                    ▼ 
+               RECOMMENDATIONS
+              
+               
+# Data Preparation
+
+Before analysis, the dataset was assessed for data-quality issues.
+
+The preparation process included:
+
+• Checking column names and data types
+• Standardising NHS Board names
+• Checking reporting periods
+• Identifying missing values
+• Checking duplicate records
+• Validating numerical fields
+• Checking percentages
+• Standardising cancer-type categories
+• Creating analytical variables
+• Removing or documenting inappropriate records
+
+Data-quality checks were performed before calculating KPIs to reduce the risk of misleading results.
+
+# Data Quality Assessment
+
+The project evaluates:
+
+Data-quality dimension	       Assessment
+Completeness	         Percentage of missing values
+Validity	             Values fall within expected ranges
+Consistency	Categories and names are standardised
+Uniqueness	Duplicate records identified
+Accuracy	Values checked against source documentation
+Timeliness	Reporting period recorded
+Integrity	Relationships between fields assessed
+
+A separate data-quality dashboard can be included in a future version of the project            
