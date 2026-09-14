@@ -20,6 +20,8 @@ The underlying statistics are published by Public Health Scotland as accredited 
 
 ##Business / Healthcare Problem##
 
-Cancer patients can experience delays between referral, diagnosis and the start of treatment.
+Cancer patients often experience delays between referral, diagnosis and the start of treatment. Consequently, monitoring these waiting times is essential, as prolonged waits place significant pressure on both patients and healthcare services and may reflect underlying capacity constraints and/or inefficiencies in clinical pathways.
 
-Monitoring waiting times is important because prolonged waits can place pressure on patients and healthcare services and may indicate capacity or pathway challenges.
+The key analytical question for this project is:
+
+"How does cancer waiting-time performance vary across NHS Scotland, health boards and cancer pathways, and where are the greatest areas of underperformance"?
