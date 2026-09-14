@@ -1,10 +1,11 @@
 # NHS-Scotland-Cancer-Waiting-Times-Performance-and-Health-Board-Analysis
 
-#Project Overview
+# Project Overview
 
 This project analyses cancer waiting-time performance across the NHS Scotland health boards,and identify trends,variation,and areas of underperformance.
 
-#Objective 
+# Objective
+ 
 The objective is to identify trends in cancer waiting times,assess performance against national standards,compare health boards, analyse variation across cancer types and provide evidence-based insights that could support healthcare service improvement.
 
 The project demonstrates an end-to-end health informatics analytics workflow,viz:
@@ -18,7 +19,7 @@ The analysis focuses on the two principal cancer waiting-time standards:
 
 The underlying statistics are published by Public Health Scotland as accredited official statistics.
 
-##Business / Healthcare Problem##
+# Business / Healthcare Problem #
 
 Cancer patients often experience delays between referral, diagnosis and the start of treatment. Consequently, monitoring these waiting times is essential, as prolonged waits place significant pressure on both patients and healthcare services and may reflect underlying capacity constraints and/or inefficiencies in clinical pathways.
 
