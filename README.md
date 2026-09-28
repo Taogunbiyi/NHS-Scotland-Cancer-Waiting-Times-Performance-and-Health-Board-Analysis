@@ -1,86 +1,99 @@
 # NHS-Scotland-Cancer-Waiting-Times-Performance-and-Health-Board-Analysis
 
+# Executive Summary
+This portfolio project analyses **40,800 records across 14 fields** from the supplied NHS Scotland cancer waiting-time dataset. The data covers **2012 to Q1 2025**, two cancer waiting-time standards, 19 health-board/reporting categories and 24 cancer-type categories.
+
+The project demonstrates an end-to-end Health Informatics analytics
+workflow:
+
+**Healthcare problem → data quality → preparation → SQL → Power BI → insight → recommendation**
+
+The analysis focuses on the **31-day** and **62-day** cancer
+waiting-time standards. Public Health Scotland states that the **31-day
+standard** measures time from decision to treat to first treatment, while
+the **62-day standard** measures time from receipt of referral to treatment.
+The standards have been national standards since 1 April 2012.
+
+The project demonstrates how health informatics analysis combines performance percentages with denominator size, waiting-time distributions and longitudinal trends.
+
+The dashboard is designed to help analysts and operational stakeholders
+move from headline performance to health-board and cancer-pathway
+detail.
+
+**Important:** This portfolio analysis is based on the uploaded dataset and therefore ends at **January--March 2025**. It should not be presented as the latest NHS Scotland position as the Public Health Scotland has subsequently published newer releases.
+
 # Project Overview
 
 This project analyses cancer waiting-time performance across the NHS Scotland health boards,and identify trends,variation,and areas of underperformance.
 The aim is to identify trends in cancer waiting times,assess performance against national standards,compare health boards, analyse variation across cancer types and provide evidence-based insights that could support healthcare service improvement.
 
-The project demonstrates an end-to-end health informatics analytics workflow,viz:
+The analysis focuses on the two principal cancer waiting-time standards: **31-day standard**, and **62-day standard**.
 
-Data acquisition → Data quality → Data preparation → SQL analysis → Power BI modelling → Dashboard → Insights → Recommendations
+# Business / Healthcare Problem 
+Cancer patients often experience delays between referral, diagnosis and the start of treatment. Consequently, monitoring these waiting times is essential, as prolonged waits place significant pressure on both patients and healthcare services and may reflect underlying capacity constraints and/or inefficiencies in clinical pathways. The key analytical question for this project is:
 
-The analysis focuses on the two principal cancer waiting-time standards:
+**How does cancer waiting-time performance vary across NHS Scotland, health boards and cancer pathways, and where are the greatest areas of underperformance?**
 
-31-day standard
-62-day standard
+## Business Questions
 
-The underlying statistics are published by Public Health Scotland as accredited official statistics.
-
-# Business / Healthcare Problem #
-
-Cancer patients often experience delays between referral, diagnosis and the start of treatment. Consequently, monitoring these waiting times is essential, as prolonged waits place significant pressure on both patients and healthcare services and may reflect underlying capacity constraints and/or inefficiencies in clinical pathways.
-
-The key analytical question for this project is:
-
-"How does cancer waiting-time performance vary across NHS Scotland, health boards and cancer pathways, and where are the greatest areas of underperformance"?
-
-# Project Objectives
-
-The project aims to provide insight into these business questions:
-
+The project provided insight into these business questions:
+    
 1. What is the overall NHS Scotland cancer waiting-time performance?
-
 2. How does 31-day performance compare with 62-day performance?
-
 3. Which health boards meet the 95% standard?
-
 4. Which health boards show persistent underperformance?
-
 5. Which cancer types have the longest waits?
-
 6. How do median and maximum waits differ?
-
 7. How does eligible referral volume change over time?
-
 8. Does performance change materially across quarters?
-
 9. Where should operational teams investigate further?
-
 10. How can the dashboard support continuous performance monitoring?
 
-# Dataset
+# Dataset Profile
 
-The analysis uses publicly available NHS Scotland cancer waiting-time statistics published by Public Health Scotland.
+The analysis used publicly available NHS Scotland cancer waiting-time statistics published by Public Health Scotland.
 
-The dataset contains information relating to cancer waiting-time performance, including measures such as:
+The portfolio is based on the Exccel dataset containing information relating to cancer waiting-time performance, including measures such as:
 
-• Reporting period
-• NHS Board
-• Cancer type/pathway
-• Number of patients
-• Waiting-time measures
-• Percentage meeting the relevant standard
-  31-day performance
-  62-day performance
+  Field                                      Description                                Type   
 
-The precise fields depend on the version of the Public Health Scotland dataset used for the analysis.
+Target Type                               31 Day or 62 Day standard                     Text
+Quarter End                                 Reporting quarter                           Text
+Year                                         Reporting year                            Integer
+Quarter number                               Reporting quarter                         Integer             
+Health Board                              NHS board/reporting category                 Text           
+Cancer Type                               Cancer pathway/category                      Text
+Number of Eligible referrals            Eligible referrals in the reporting group      Integer 
+Number of Eligible referrals            Eligible referrals met Target                  Integer                                                      
+Target performance                     Percentage meeting the standard                 Numeric              
+Max                                        Maximum waiting time                        Integer
+Median                                     Median waiting time                         Numeric
+95th percentile                        95th-percentile waiting time where              Numeric
+                                                    available    
 
-# Data source
+## Data Coverage
+-   Records: 40,800
+-   Fields: 14
+-   Period: 2012 to January-March 2025
+-   Target types: 31 Day and 62 Day
+-   Health-board/reporting categories: 19
+-   Cancer-type categories: 24
 
-Public Health Scotland:
+## Data source
+Public Health Scotland Cancer Waiting Times:
+https://publichealthscotland.scot/healthcare-system/waiting-times/cancer-waiting-times/
 
-https://www.publichealthscotland.scot/
+## Privacy
+The dataset used in this portfolio is aggregate reporting data. Do not add patient-level identifiable information to this repository.
 
-The latest release used for this project should be documented in the data/README.md file so that the analysis remains reproducible.
+## Missing data
+The source contains missing values in Median, 95th percentile, Rate of Referrals and Concatenation. These are retained/documented rather than silently replaced.
 
 # Data Governance and Privacy
-
-This project uses publicly available aggregate statistics.
-
+This project uses aggregate healthcare statistics for portfolio and educational purposes.
 No identifiable patient-level information is used.
-
-The project therefore does not require the storage or publication of:
-
+## Patient Privacy
+The project does not require the storage or publication of:
 • Patient names
 • NHS numbers
 • Addresses
@@ -88,9 +101,20 @@ The project therefore does not require the storage or publication of:
 • Individual clinical records
 • Other directly identifiable patient information
 
-Healthcare analytics must consider confidentiality, information governance and appropriate use of health data.
+## Principles demonstrated
+-   Confidentiality
+-   Data minimisation
+-   Purpose limitation
+-   Appropriate use
+-   Data quality
+-   Responsible interpretation
+-   Disclosure awareness
 
-Where patient-level data is used in future versions, appropriate governance, access controls, lawful processing and disclosure controls would be required.
+## Small-number disclosure
+Small denominators require caution. Percentage performance for small NHS boards can move substantially because one or two patients may materially change the result.
+
+## Governance context
+A production healthcare analytics environment would require appropriate access controls, lawful processing, information governance approval where applicable, auditability and adherence to organisational policies.
 
 # Analytical Workflow
 
