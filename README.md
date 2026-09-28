@@ -51,25 +51,44 @@ The project provided insight into these business questions:
 
 # Dataset Profile
 
-The analysis used publicly available NHS Scotland cancer waiting-time statistics published by Public Health Scotland.
+The analysis used publicly available NHS Scotland cancer waiting-time statistics published by Public Health Scotland. The portfolio is based on the Exccel dataset containing information relating to cancer waiting-time performance.
 
-The portfolio is based on the Exccel dataset containing information relating to cancer waiting-time performance, including measures such as:
+## Data Dictionary
 
-  Field                                      Description                                Type   
+  -----------------------------------------------------------------------
+  Field                   Description             Type
+  ----------------------- ----------------------- -----------------------
 
-Target Type                               31 Day or 62 Day standard                     Text
-Quarter End                                 Reporting quarter                           Text
-Year                                         Reporting year                            Integer
-Quarter number                               Reporting quarter                         Integer             
-Health Board                              NHS board/reporting category                 Text           
-Cancer Type                               Cancer pathway/category                      Text
-Number of Eligible referrals            Eligible referrals in the reporting group      Integer 
-Number of Eligible referrals            Eligible referrals met Target                  Integer                                                      
-Target performance                     Percentage meeting the standard                 Numeric              
-Max                                        Maximum waiting time                        Integer
-Median                                     Median waiting time                         Numeric
-95th percentile                        95th-percentile waiting time where              Numeric
-                                                    available    
+  Target Type             31 Day or 62 Day        Text
+                          standard                
+
+  Quarter End             Reporting quarter       Text
+
+  Year                    Reporting year          Integer
+
+  Quarter                 Reporting quarter       Integer
+                          number                  
+
+  Health Board            NHS board/reporting     Text
+                          category                
+
+  Cancer Type             Cancer pathway/category Text
+
+  Number of Eligible      Eligible referrals in   Integer
+  referrals               the reporting group     
+
+  Number of Eligible      Eligible referrals      Integer
+  referrals met Target    meeting the standard    
+
+  Target performance      Percentage meeting the  Numeric
+                          standard                
+
+  Max                     Maximum waiting time    Integer
+
+  Median                  Median waiting time     Numeric
+
+  95th percentile         95th-percentile waiting Numeric
+                          time where available    
 
 ## Data Coverage
 -   Records: 40,800
